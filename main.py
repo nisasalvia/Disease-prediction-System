@@ -9,12 +9,11 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-diabetes_model = pickle.load(open('C:/Users/Admin/OneDrive/Desktop/Multiple disease prediction system/saved models/diabetes_model.sav', 'rb'))
-heart_model = pickle.load(open('C:/Users/Admin/OneDrive/Desktop/Multiple disease prediction system/saved models/heart_disease_model.sav', 'rb'))
-ckd_model = pickle.load(open('C:/Users/Admin/OneDrive/Desktop/Multiple disease prediction system/saved models/ckd_model.sav', 'rb'))
-hepatitis_model = pickle.load(open('C:/Users/Admin/OneDrive/Desktop/Multiple disease prediction system/saved models/hepatitis_model.sav', 'rb'))
-cancer_model = pickle.load(open('C:/Users/Admin/OneDrive/Desktop/Multiple disease prediction system/saved models/Cancer_model.sav', 'rb'))
-parkinson_model = pickle.load(open('C:/Users/Admin/OneDrive/Desktop/Multiple disease prediction system/saved models/parkinson_model .sav', 'rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
+heart_model = pickle.load(open('heart_disease_model.sav', 'rb'))
+ckd_model = pickle.load(open('ckd_model.sav', 'rb'))
+cancer_model = pickle.load(open('Cancer_model.sav', 'rb'))
+parkinson_model = pickle.load(open('parkinson_model .sav', 'rb'))
 
 
 with st.sidebar:
